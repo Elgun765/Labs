@@ -1,0 +1,18 @@
+Verilənlər
+x = 0.3
+epsilon = 0.01
+
+Başlanğıc dəyərlər
+lnx = math.log(x)
+P = 0
+n = 1
+
+while True:
+    term = (n * lnx) / (2 * n - 1)
+    P += term
+    if abs(term) < epsilon:
+        break
+    n += 1
+
+print(f"P ≈ {P:.5f} (ε = {epsilon})")
+print(f"İstifadə olunan üzv sayı: {n}")
