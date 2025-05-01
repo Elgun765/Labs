@@ -1,0 +1,25 @@
+Parametrlər
+a = 1  # istəyə görə dəyişdirilə bilər
+b = 4  # istəyə görə dəyişdirilə bilər
+
+x aralığı: 2-dən 6-ya qədər, 0.5 addımlarla
+x_values = np.arange(2, 6.1, 0.5)
+
+Z dəyərlərini saxlamaq üçün siyahı
+z_values = []
+
+Hesablama
+for x in x_values:
+    if x == b:
+        z = 2.1 * x**2 + 2 * a * b
+    elif x > b:
+        z = 3 * a - 2 * b * x
+    else:
+        z = 4 * b + 6 * a * x
+    z_values.append(z)
+
+Nəticələrin çapı
+print("x\tz")
+for x, z in zip(x_values, z_values):
+    print(f"{x:.1f}z:.2f")
+
