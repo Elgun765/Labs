@@ -1,0 +1,10 @@
+Siyahının uzunluğu
+n = 10
+
+[0;19] intervalında təsadüfi tam ədədlər siyahısı
+siyahi = [random.randint(0, 19) for _ in range(n)]
+
+Nəticəni çıxışa ver
+print("Təsadüfi ədədlər:", siyahi)
+- random.randint(0, 19) – hər dəfə 0 ilə 19 arasında (hər ikisi daxil) bir tam ədəd verir.
+- for _ in range(n) – bu əməliyyatı n dəfə (burada 10 dəfə) təkrar edir.
