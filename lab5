@@ -1,0 +1,11 @@
+a1-dən a20-yə qədər olan ədədlərin siyahısı (məsələn, təsadüfi ədədlər)
+a = [i for i in range(1, 21)]  # [1, 2, ..., 20]
+
+Cəmini tap
+cem = sum(a)
+
+Sinusunu hesabla (radianla!)
+S = math.sin(cem)
+
+Nəticəni göstər
+print("S =", S)
